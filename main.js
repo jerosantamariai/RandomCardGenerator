@@ -5,8 +5,8 @@ let rnd1 = Math.floor(Math.random()*crdnum.length);
 let rnd2 = Math.floor(Math.random()*colour.length);
 
 
-document.querySelector(".center").innerHTML = card(crdnum[rnd1]);
-document.querySelectorAll(".top, .bottom").classList.add(colour[rnd2]);
+document.querySelector(".cardcontent").innerHTML = card(crdnum[rnd1]);
+document.querySelector(".cardcontent").classList.add(colour[rnd2]);
 
 
 
@@ -19,6 +19,6 @@ switch(num){
     default: return num;
 }
 }
-let a = document.createElement("p");
-let b = document.createTextNode("Hello World!");
-a.appendChild(b);
+// let a = document.createElement("p");
+// let b = document.createTextNode("Hello World!");
+// a.appendChild(b);
